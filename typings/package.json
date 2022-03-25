@@ -1,0 +1,22 @@
+{
+  "name": "@doomui/typings",
+  "version": "0.0.0",
+  "description": "",
+  "types": "./dist/types.d.ts",
+  "isLibrary": true,
+  "outputFormat": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher-aube/doomUI.git",
+    "directory": "typings"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/christopher-aube/doomUI/typings#readme",
+  "scripts": {
+    "check:type": "tsc -b ./tsconfig.json"
+  }
+}

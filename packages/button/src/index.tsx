@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { ButtonProps } from './types'
+import * as styleMod from './styles.module.scss'
 
-export const baseClass = 'doomui-button'
+export const baseClass:string = 'doomuiButton'
 
 export const Button = (props: ButtonProps) => {
   const { children, className } = props
@@ -10,7 +11,7 @@ export const Button = (props: ButtonProps) => {
     <button
       className={
         [
-          baseClass,
+          styleMod[baseClass],
           className
         ]
         .join(' ')
