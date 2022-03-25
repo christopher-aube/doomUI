@@ -1,11 +1,12 @@
 {
-  "name": "@doomui/button",
+  "name": "@doomui/theme",
   "version": "0.0.0",
   "description": "",
-  "source": "./src/index.tsx",
-  "main": "./dist/doomui.button.js",
-  "types": "./dist/types.d.ts",
-  "style": "./dist/doomui.button.css",
+  "type": "module",
+  "source": "./src/_index.scss",
+  "main": "./dist/doomui.theme.css",
+  "sass": "./src/_index.scss",
+  "style": "./dist/doomui.theme.css",
   "files": [
     "dist",
     "src"
@@ -18,17 +19,12 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christopher-aube/doomUI.git",
-    "directory": "packages/button"
+    "directory": "packages/theme"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/christopher-aube/doomUI/issues"
   },
-  "homepage": "https://github.com/christopher-aube/doomUI#readme",
-  "dependencies": {
-    "@doomui/theme": "^0.0.0",
-    "@doomui/typings": "^0.0.0",
-    "react": "^17.0.2"
-  }
+  "homepage": "https://github.com/christopher-aube/doomUI#readme"
 }

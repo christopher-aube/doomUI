@@ -1,4 +1,4 @@
 {
   "outFile": "./dist/doomui.[folder].css",
-  "includePaths": ["./node_modules/", "./packages/"]
+  "includePaths": ["./node_modules/", "./packages/", "./"]
 }

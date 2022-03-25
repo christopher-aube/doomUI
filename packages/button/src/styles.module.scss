@@ -1,7 +1,8 @@
+@use '@doomui/theme/src' as theme;
+
 .doomui {
   &-button {
     border: none;
-    background-color: #212121;
-    color: #ffffff;
+    @include theme.default-branding;
   }
 }
