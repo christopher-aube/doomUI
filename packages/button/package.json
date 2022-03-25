@@ -1,0 +1,33 @@
+{
+  "name": "@doomui/button",
+  "version": "0.0.0",
+  "description": "",
+  "source": "./src/index.tsx",
+  "main": "./dist/index.js",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "isLibrary": true,
+  "outputFormat": "commonjs",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopher-aube/doomUI.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christopher-aube/doomUI/issues"
+  },
+  "homepage": "https://github.com/christopher-aube/doomUI#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
