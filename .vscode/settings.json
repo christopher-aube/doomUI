@@ -2,5 +2,5 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "spellright.language": ["en"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext", "jsonc"]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
 }
