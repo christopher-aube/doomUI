@@ -1,3 +1,3 @@
 # Doom UI
 
-![doom](images\doom.jpg)
+![doom](./images/doom.jpg)
