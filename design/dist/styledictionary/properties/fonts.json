@@ -1,0 +1,19 @@
+{
+  "font": {
+    "doom_sys_typeface_body": {
+      "family": {
+        "value": "'Lato', sans-serif"
+      },
+      "weight": {
+        "value": "400"
+      }
+    }
+  },
+  "size": {
+    "font": {
+      "doom_sys_typeface_body": {
+        "value": "1"
+      }
+    }
+  }
+}

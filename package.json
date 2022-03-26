@@ -7,10 +7,11 @@
   "workspaces": [
     "packages/*",
     "typings",
-    "theme"
+    "theme",
+    "design"
   ],
   "scripts": {
-    "build:theme": "sass theme/src/_index.scss theme/dist/doomui.theme.css",
+    "build:theme": "sass --load-path=node_modules theme/src/_index.scss theme/dist/doomui.theme.css",
     "prebuild": "npm run build:theme",
     "build": "parcel build packages/* --no-cache"
   },
@@ -42,6 +43,7 @@
     "postcss-modules": "^4.3.1",
     "prettier": "^2.6.0",
     "sass": "^1.49.9",
+    "style-dictionary": "^3.7.0",
     "typescript": "^4.6.3"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "color": {
+    "doom_sys_color_dark": {
+      "value": "{color.doom_ref_palette_grey-600.value}"
+    },
+    "doom_sys_color_light": {
+      "value": "{color.doom_ref_palette_white.value}"
+    },
+    "doom_sys_bg_dark": {
+      "value": "{color.doom_ref_palette_grey-600.value}"
+    },
+    "doom_sys_bg_light": {
+      "value": "{color.doom_ref_palette_white.value}"
+    },
+    "doom_ref_palette_grey-600": {
+      "value": "#212121ff"
+    },
+    "doom_ref_palette_white": {
+      "value": "#ffffffff"
+    }
+  }
+}

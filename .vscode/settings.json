@@ -2,5 +2,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "spellright.language": ["en"],
-  "spellright.documentTypes": ["markdown", "latex", "plaintext"]
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "xd.lastPackage": "/p:/personal/doomUI/design",
+  "xd.globalEditor": true
 }

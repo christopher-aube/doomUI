@@ -1,25 +1,24 @@
 {
-  "name": "@doomui/theme",
+  "name": "@doomui/design",
   "version": "0.0.0",
   "description": "",
   "type": "module",
-  "source": "./src/_index.scss",
-  "main": "./dist/doomui.theme.css",
-  "sass": "./src/_index.scss",
-  "style": "./dist/doomui.theme.css",
+  "main": "./dist/styledictionary/css/variables.css",
+  "sass": "./dist/styledictionary/scss/variables.scss",
+  "style": "./dist/styledictionary/css/variables.css",
   "files": [
     "dist",
-    "src"
+    "data",
+    "assets"
   ],
   "isLibrary": true,
-  "outputFormat": "commonjs",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/christopher-aube/doomUI.git",
-    "directory": "theme"
+    "directory": "design"
   },
   "author": "",
   "license": "MIT",
@@ -27,7 +26,7 @@
     "url": "https://github.com/christopher-aube/doomUI/issues"
   },
   "homepage": "https://github.com/christopher-aube/doomUI#readme",
-  "dependencies": {
-    "@doomui/design": "^0.0.0"
+  "devDependencies": {
+    "style-dictionary": "^3.7.0"
   }
 }

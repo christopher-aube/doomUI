@@ -1,6 +1,6 @@
 @use '../globals/vars' as *;
 
 @mixin branding {
-  background-color: $doomui-sys-bg-light;
-  color: $doomui-sys-color-dark;
+  background-color: $doom-sys-bg-light;
+  color: $doom-sys-color-dark;
 }
