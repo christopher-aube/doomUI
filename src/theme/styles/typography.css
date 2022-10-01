@@ -1,0 +1,17 @@
+.text-sm {
+  font-family: var(--dui-ref-typeface-body-family-sm);
+  font-weight: var(--dui-ref-typeface-body-weight-sm);
+  font-size: var(--dui-ref-typeface-body-size-sm);
+}
+
+.text-md {
+  font-family: var(--dui-ref-typeface-body-family-md);
+  font-weight: var(--dui-ref-typeface-body-weight-md);
+  font-size: var(--dui-ref-typeface-body-size-md);
+}
+
+.text-lg {
+  font-family: var(--dui-ref-typeface-body-family-lg);
+  font-weight: var(--dui-ref-typeface-body-weight-lg);
+  font-size: var(--dui-ref-typeface-body-size-lg);
+}

@@ -63,5 +63,7 @@ jspm_packages/
 .pnp.*
 
 # Build output
-dist
-!design/dist
+dist/
+build/
+dev/
+!dev/src/

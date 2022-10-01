@@ -1,8 +1,0 @@
-@use '@doomui/theme/src' as theme;
-
-.doomui {
-  &-button {
-    border: none;
-    @include theme.default-branding;
-  }
-}

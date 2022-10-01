@@ -1,0 +1,6 @@
+.dui__theme--light {
+  --dui-bg: var(--dui-ref-palette-grey-1000);
+  --dui-color: var(--dui-ref-palette-grey-100);
+  --dui-btn-color: #46954a;
+  --dui-btn-text: var(--dui-ref-palette-grey-1000);
+}
