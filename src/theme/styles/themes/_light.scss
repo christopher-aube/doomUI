@@ -1,0 +1,12 @@
+@use '../globals' as *;
+
+.dui__theme--light {
+  --dui-bg: var(--dui-color-white);
+  --dui-color: var(--dui-color-grey-500);
+  --dui-font-family: var(--dui-typeface-body-family-md);
+  --dui-font-size: var(--dui-typeface-body-size-md);
+  --dui-font-weight: var(--dui-typeface-body-weight-md);
+  --dui-btn-color: var(--dui-color-green-500);
+  --dui-btn-text: var(--dui-color-white);
+  --dui-btn-border-color: var(--dui-color-green-800);
+}

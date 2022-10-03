@@ -1,0 +1,43 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+$dui-ref-font-family: 'Lato', sans-serif;
+$dui-ref-font-weight: 400;
+$dui-ref-font-weight-thin: 100;
+$dui-ref-font-weight-bold: 700;
+$dui-ref-font-style: normal;
+$dui-ref-font-style-italic: italic;
+$dui-ref-font-size: 1rem;
+
+:root {
+  --dui-typeface-body-family-sm: #{$dui-ref-font-family};
+  --dui-typeface-body-weight-sm: #{$dui-ref-font-weight};
+  --dui-typeface-body-size-sm: #{($dui-ref-font-size * 0.65)};
+
+  --dui-typeface-body-family-md: #{$dui-ref-font-family};
+  --dui-typeface-body-weight-md: #{$dui-ref-font-weight};
+  --dui-typeface-body-size-md: #{$dui-ref-font-size};
+
+  --dui-typeface-body-family-lg: #{$dui-ref-font-family};
+  --dui-typeface-body-weight-lg: #{$dui-ref-font-weight};
+  --dui-typeface-body-size-lg: #{($dui-ref-font-size * 1.65)};
+}
+
+.text-sm {
+  font-family: var(--dui-typeface-body-family-sm);
+  font-weight: var(--dui-typeface-body-weight-sm);
+  font-size: var(--dui-typeface-body-size-sm);
+}
+
+.text-md {
+  font-family: var(--dui-typeface-body-family-md);
+  font-weight: var(--dui-typeface-body-weight-md);
+  font-size: var(--dui-typeface-body-size-md);
+}
+
+.text-lg {
+  font-family: var(--dui-typeface-body-family-lg);
+  font-weight: var(--dui-typeface-body-weight-lg);
+  font-size: var(--dui-typeface-body-size-lg);
+}
