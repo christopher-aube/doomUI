@@ -4,17 +4,17 @@ $dui-ref-palette-black: #000000;
 $dui-ref-palette-white: #ffffff;
 
 $dui-ref-palette-grey: #212121;
-$dui-ref-palette-grey-1000: shade($dui-ref-palette-grey, 80%);
+$dui-ref-palette-grey-1000: shade($dui-ref-palette-grey, 90%);
 $dui-ref-palette-grey-900: shade($dui-ref-palette-grey, 70%);
-$dui-ref-palette-grey-800: shade($dui-ref-palette-grey, 45%);
-$dui-ref-palette-grey-700: shade($dui-ref-palette-grey, 25%);
-$dui-ref-palette-grey-600: shade($dui-ref-palette-grey, 12.5%);
+$dui-ref-palette-grey-800: shade($dui-ref-palette-grey, 50%);
+$dui-ref-palette-grey-700: shade($dui-ref-palette-grey, 30%);
+$dui-ref-palette-grey-600: shade($dui-ref-palette-grey, 15%);
 $dui-ref-palette-grey-500: $dui-ref-palette-grey;
-$dui-ref-palette-grey-400: tint($dui-ref-palette-grey, 12.5%);
+$dui-ref-palette-grey-400: tint($dui-ref-palette-grey, 15%);
 $dui-ref-palette-grey-300: tint($dui-ref-palette-grey, 25%);
-$dui-ref-palette-grey-200: tint($dui-ref-palette-grey, 45%);
-$dui-ref-palette-grey-100: tint($dui-ref-palette-grey, 70%);
-$dui-ref-palette-grey-50: tint($dui-ref-palette-grey, 80%);
+$dui-ref-palette-grey-200: tint($dui-ref-palette-grey, 40%);
+$dui-ref-palette-grey-100: tint($dui-ref-palette-grey, 60%);
+$dui-ref-palette-grey-50: tint($dui-ref-palette-grey, 75%);
 
 $dui-ref-palette-green: #206b40;
 $dui-ref-palette-green-1000: shade($dui-ref-palette-green, 90%);
