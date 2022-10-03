@@ -1,0 +1,21 @@
+@use '../functions' as *;
+
+$dui-ref-palette-grey: #212121;
+$dui-ref-palette-grey-900: shade($dui-ref-palette-grey, 80%);
+$dui-ref-palette-grey-500: $dui-ref-palette-grey;
+$dui-ref-palette-grey-100: tint($dui-ref-palette-grey, 80%);
+
+$dui-ref-palette-green: #206b40;
+$dui-ref-palette-green-900: shade($dui-ref-palette-green, 80%);
+$dui-ref-palette-green-500: $dui-ref-palette-green;
+$dui-ref-palette-green-100: tint($dui-ref-palette-green, 80%);
+
+:root {
+  --dui-color-grey-900: #{$dui-ref-palette-grey-900};
+  --dui-color-grey-500: #{$dui-ref-palette-grey-500};
+  --dui-color-grey-100: #{$dui-ref-palette-grey-100};
+
+  --dui-color-green-900: #{$dui-ref-palette-green-900};
+  --dui-color-green-500: #{$dui-ref-palette-green-500};
+  --dui-color-green-100: #{$dui-ref-palette-green-100};
+}

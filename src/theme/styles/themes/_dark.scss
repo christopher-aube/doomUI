@@ -1,0 +1,8 @@
+@use '../globals' as *;
+
+.dui__theme--dark {
+  --dui-bg: var(--dui-color-grey-500);
+  --dui-color: var(--dui-color-grey-900);
+  --dui-btn-color: #373e47;
+  --dui-btn-text: #adbac7;
+}
