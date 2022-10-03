@@ -35,6 +35,7 @@ body {
 
   &__blocks {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__label {
