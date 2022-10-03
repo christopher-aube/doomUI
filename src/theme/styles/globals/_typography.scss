@@ -1,7 +1,13 @@
 @use "sass:math";
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
 $dui-ref-font-family: 'Lato', sans-serif;
 $dui-ref-font-weight: 400;
+$dui-ref-font-weight-thin: 100;
+$dui-ref-font-weight-bold: 700;
+$dui-ref-font-style: normal;
+$dui-ref-font-style-italic: italic;
 $dui-ref-font-size: 1rem;
 
 :root {

@@ -2,7 +2,11 @@
 
 .dui__theme--dark {
   --dui-bg: var(--dui-color-grey-500);
-  --dui-color: var(--dui-color-grey-900);
-  --dui-btn-color: #373e47;
-  --dui-btn-text: #adbac7;
+  --dui-color: var(--dui-color-grey-100);
+  --dui-font-family: var(--dui-typeface-body-family-md);
+  --dui-font-size: var(--dui-typeface-body-size-md);
+  --dui-font-weight: var(--dui-typeface-body-weight-md);
+  --dui-btn-color: var(--dui-color-grey-400);
+  --dui-btn-text: var(--dui-color-grey-100);
+  --dui-btn-border-color: var(--dui-color-grey-600);
 }

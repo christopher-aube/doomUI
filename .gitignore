@@ -65,5 +65,8 @@ jspm_packages/
 # Build output
 dist/
 build/
-dev/
+dev/*.css
+dev/*.html
+dev/*.js
+dev/*.map
 !dev/src/

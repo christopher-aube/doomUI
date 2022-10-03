@@ -1,0 +1,221 @@
+@use "sass:meta";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  background-color: var(--dui-bg);
+  color: var(--dui-color);
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  font-weight: var(--dui-font-weight);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme-btn {
+  background-color: var(--dui-btn-color);
+  color: var(--dui-btn-text);
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  border-color: var(--dui-btn-border-color);
+  border-style: solid;
+}
+
+.color-section {
+  padding: 0rem 2rem 2rem;
+
+  &__blocks {
+    display: flex;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--dui-typeface-body-weight-md);
+  }
+}
+
+.color-block {
+  margin: 0.25rem;
+
+  &__display {
+    height: 100px;
+    width: 100px;
+  }
+
+  &__label {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+
+@mixin color-blocks($args...) {
+  @each $name, $values in meta.keywords($args) {
+    @each $value in $values {
+
+      .color-block__display {
+        &.#{$name}--#{$value} {
+          background-color: var(--dui-color-#{$name}-#{$value});
+        }
+      }
+    }
+  }
+}
+
+@include color-blocks(
+  $grey: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ),
+  $green: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $yellow: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $orange: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $red: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $rose: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $pink: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $purple: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $indigo: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $blue: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $cyan: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+  $teal: (
+    50,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000),
+);
