@@ -1,0 +1,67 @@
+.button {
+  $ref: &;
+  background-color: var(--dui-btn-color);
+  color: var(--dui-btn-text);
+  border-color: var(--dui-btn-border-color);
+  border-radius: 0.25rem;
+  border-style: solid;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--dui-color-blue-500);
+    color: var(--dui-color-white);
+    border-color: var(--dui-color-blue-700);
+  }
+
+  &--success {
+    background-color: var(--dui-color-green-500);
+    color: var(--dui-color-white);
+    border-color: var(--dui-color-green-700);
+  }
+
+  &--alert {
+    background-color: var(--dui-color-red-500);
+    color: var(--dui-color-white);
+    border-color: var(--dui-color-red-700);
+  }
+
+  &--warning {
+    background-color: var(--dui-color-yellow-400);
+    color: var(--dui-color-grey-500);
+    border-color: var(--dui-color-yellow-700);
+  }
+
+  &--info {
+    background-color: var(--dui-color-cyan-500);
+    color: var(--dui-color-white);
+    border-color: var(--dui-color-cyan-700);
+  }
+
+  &--appearance {
+    &--outline {
+      background-color: var(--dui-bg);
+      border-color: currentColor;
+
+      &#{$ref}--primary {
+        color: var(--dui-color-blue-500);
+      }
+
+      &#{$ref}--success {
+        color: var(--dui-color-green-500);
+      }
+
+      &#{$ref}--alert {
+        color: var(--dui-color-red-500);
+      }
+
+      &#{$ref}--warning {
+        color: var(--dui-color-yellow-600);
+      }
+
+      &#{$ref}--info {
+        color: var(--dui-color-cyan-600);
+      }
+    }
+  }
+}

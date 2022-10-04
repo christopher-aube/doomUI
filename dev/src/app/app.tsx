@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { PageConfigs } from './app.types';
+import { PageConfigs, PageConfig } from './app.types';
+import * as styles from './_index.scss';
 import * as pageConfigs from '../pages';
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Theme, Button } from '../../../src';
@@ -10,7 +11,8 @@ export const App = () => {
   const [theme, setTheme] = useState<Theme.Themes>('light');
   const configs = pageConfigs as PageConfigs;
   const configKeys = Object.keys(configs);
-
+  const classes = `${styles.themeBtn} ${Theme.styles.textLg}`;
+  
   const handlerTheme = () => {
     const themeToggle = theme === 'light' ? 'dark' : 'light';
 
@@ -19,16 +21,20 @@ export const App = () => {
 
   return (
     <Theme.Provider theme={theme}>
-      <Button className="theme-btn text-lg" onClick={handlerTheme}>Toggle Theme: {theme}</Button>
+      <Button
+        className={classes}
+        onClick={handlerTheme}
+        variant="Primary">
+          Toggle Theme: {theme}
+        </Button>
       <Router>
         <main>
           <Routes>
             {
               configKeys.map((name: string, idx: number) => {
-                const path = pageConfigs[name].Path;
-                const Page = pageConfigs[name].Page;
+                const config = configs[name];
                 
-                return <Route key={idx} path={path} element={<Page />} />
+                return <Route key={idx} path={config.Path} element={<config.Page />} />
               })
             }
             <Route path="*" element={<Navigate to={homePageRoute} />} />

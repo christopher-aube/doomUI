@@ -18,10 +18,11 @@ $grey: #212121;
   --dui-color-grey-300: #{tint($grey, 25%)};
   --dui-color-grey-200: #{tint($grey, 40%)};
   --dui-color-grey-100: #{tint($grey, 60%)};
-  --dui-color-grey-50: #{tint($grey, 75%)};
+  --dui-color-grey-50: #{tint($grey, 80%)};
 }
 
 @include color-swatch(
+  $sleet: #737B80,
   $green: #206b40,
   $yellow: #F7B33E,
   $orange: #DE5100,

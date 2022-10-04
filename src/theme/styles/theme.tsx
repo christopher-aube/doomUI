@@ -1,7 +1,9 @@
-import * as styles from './_index.scss';
+import * as theme from './_index.scss';
 import * as utils from '../utils';
 
-const styleKeys = Object.keys(styles);
+const styleKeys = Object.keys(theme);
+
+export const styles = theme;
 
 export const lookup = (style: string) => {
   const [hasStyle, styleName] = utils.searchStyles(style, styleKeys, styles);

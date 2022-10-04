@@ -6,11 +6,11 @@ export const ColorSection = ({ color }: ColorBlockProps) => {
   const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000];
 
   return (
-    <div className='color-section'>
-      <h2 className='color-section__label'>{color}</h2>
-      <div className='color-section__blocks'>
+    <div className='dui__color-section'>
+      <h2 className='dui__color-section__label'>{color}</h2>
+      <div className='dui__color-section__blocks'>
         {shades.map((shade: number, idx: number) => {
-          const colorShade = `${color}--${shade}`;
+          const colorShade = `dui__${color}--${shade}`;
 
           return <ColorBlock color={colorShade} key={idx} />;
         })}

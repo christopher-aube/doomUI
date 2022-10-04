@@ -4,7 +4,7 @@ import { ColorSection } from './components';
 export const Path = '/palette';
 
 export const Page = () => {
-  const colors = ['grey', 'green', 'yellow', 'orange', 'red', 'rose', 'pink', 'purple', 'indigo', 'blue', 'cyan', 'teal'];
+  const colors = ['grey', 'sleet', 'green', 'yellow', 'orange', 'red', 'rose', 'pink', 'purple', 'indigo', 'blue', 'cyan', 'teal'];
 
   return (
     <>

@@ -13,7 +13,7 @@ $dui-ref-font-size: 1rem;
 :root {
   --dui-typeface-body-family-sm: #{$dui-ref-font-family};
   --dui-typeface-body-weight-sm: #{$dui-ref-font-weight};
-  --dui-typeface-body-size-sm: #{($dui-ref-font-size * 0.65)};
+  --dui-typeface-body-size-sm: #{($dui-ref-font-size * 0.75)};
 
   --dui-typeface-body-family-md: #{$dui-ref-font-family};
   --dui-typeface-body-weight-md: #{$dui-ref-font-weight};
@@ -21,13 +21,15 @@ $dui-ref-font-size: 1rem;
 
   --dui-typeface-body-family-lg: #{$dui-ref-font-family};
   --dui-typeface-body-weight-lg: #{$dui-ref-font-weight};
-  --dui-typeface-body-size-lg: #{($dui-ref-font-size * 1.65)};
+  --dui-typeface-body-size-lg: #{($dui-ref-font-size * 1.25)};
 }
 
 .text-sm {
   font-family: var(--dui-typeface-body-family-sm);
   font-weight: var(--dui-typeface-body-weight-sm);
   font-size: var(--dui-typeface-body-size-sm);
+  font-variant: small-caps;
+  letter-spacing: 0.05rem;
 }
 
 .text-md {

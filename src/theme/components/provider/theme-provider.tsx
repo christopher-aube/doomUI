@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { ThemeProviderProps } from './theme-provider.types';
+import * as styles from '../../styles/_index.scss';
 
 export const Provider = ({ theme, children, ...props }: ThemeProviderProps) => {
   const [parent, setParent] = useState<HTMLElement>();
@@ -13,10 +14,10 @@ export const Provider = ({ theme, children, ...props }: ThemeProviderProps) => {
     position: 'absolute',
   } as React.StyleHTMLAttributes<HTMLDivElement>;
   const themes: {[key: string]: string} = {
-      dark: 'dui__theme--dark',
-      light: 'dui__theme--light'
-    }
-  const themeList = Object.keys(themes).map(themeName => themes[themeName])
+    dark: styles.themeDark,
+    light: styles.themeLight,
+  };
+  const themeList = Object.keys(themes).map(themeName => themes[themeName]);
 
   useEffect(() => {
     const isSet = parent;
