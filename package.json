@@ -16,7 +16,8 @@
   "scripts": {
     "start": "parcel serve --target dev --dist-dir ./dev --open",
     "prebuild": "rimraf ./build",
-    "build": "parcel build --target prop --no-cache"
+    "build": "parcel build --target prod --no-cache",
+    "build:site": "parcel build --target site --no-cache"
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -48,6 +49,7 @@
     "extends": "config-ts-react/stylelint"
   },
   "dev": "./dev/index.html",
+  "site": "./site/index.html",
   "prod": "./build/doom-ui.js",
   "types": "./build/doom-ui.d.ts",
   "targets": {
@@ -60,6 +62,10 @@
     "dev": {
       "source": "./dev/src/index.html",
       "distDir": "./dev"
+    },
+    "site": {
+      "source": "./dev/src/index.html",
+      "distDir": "./stie"
     }
   },
   "exports": {

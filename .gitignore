@@ -64,6 +64,7 @@ jspm_packages/
 
 # Build output
 dist/
+site/
 build/
 dev/*.css
 dev/*.html
