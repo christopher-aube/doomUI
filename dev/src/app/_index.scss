@@ -1,0 +1,23 @@
+#app {
+  background-color: var(--dui-bg);
+  color: var(--dui-color);
+  font-family: var(--dui-font-family);
+  font-size: var(--dui-font-size);
+  font-weight: var(--dui-font-weight);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme-btn {
+  background-color: var(--dui-btn-color);
+  color: var(--dui-btn-text);
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 0.25rem;
+  border-color: var(--dui-btn-border-color);
+  border-style: solid;
+}
