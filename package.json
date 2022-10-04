@@ -65,7 +65,8 @@
     },
     "site": {
       "source": "./dev/src/index.html",
-      "distDir": "./site"
+      "distDir": "./site",
+      "publicUrl": "../doomUI"
     }
   },
   "exports": {
