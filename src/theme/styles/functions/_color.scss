@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use "sass:color";
 
 @function tint($color, $percentage) {
@@ -6,4 +7,24 @@
 
 @function shade($color, $percentage) {
   @return color.mix(black, $color, $percentage);
+}
+
+@mixin color-swatch($args...) {
+
+  @each $name,
+  $color in meta.keywords($args) {
+    :root {
+      --dui-color-#{$name}-1000: #{shade($color, 90%)};
+      --dui-color-#{$name}-900: #{shade($color, 80%)};
+      --dui-color-#{$name}-800: #{shade($color, 60%)};
+      --dui-color-#{$name}-700: #{shade($color, 40%)};
+      --dui-color-#{$name}-600: #{shade($color, 20%)};
+      --dui-color-#{$name}-500: #{$color};
+      --dui-color-#{$name}-400: #{tint($color, 20%)};
+      --dui-color-#{$name}-300: #{tint($color, 40%)};
+      --dui-color-#{$name}-200: #{tint($color, 60%)};
+      --dui-color-#{$name}-100: #{tint($color, 80%)};
+      --dui-color-#{$name}-50: #{tint($color, 90%)};
+    }
+  }
 }
